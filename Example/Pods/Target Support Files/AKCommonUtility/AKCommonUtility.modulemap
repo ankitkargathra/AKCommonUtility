@@ -1,0 +1,6 @@
+framework module AKCommonUtility {
+  umbrella header "AKCommonUtility-umbrella.h"
+
+  export *
+  module * { export * }
+}

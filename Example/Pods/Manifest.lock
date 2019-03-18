@@ -1,0 +1,16 @@
+PODS:
+  - AKCommonUtility (0.1.0)
+
+DEPENDENCIES:
+  - AKCommonUtility (from `../`)
+
+EXTERNAL SOURCES:
+  AKCommonUtility:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AKCommonUtility: 79e2e39ece022a78b7dc1917228d0ee7a5dd1f61
+
+PODFILE CHECKSUM: 3b9d7784c0654afbc2113a7a8245e3b331013e7a
+
+COCOAPODS: 1.6.0.beta.1
