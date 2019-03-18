@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AKCommonUtility'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'AKCommonUtility provides common methods.'
   s.swift_version    = '4.2'
 

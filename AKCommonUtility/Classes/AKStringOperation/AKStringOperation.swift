@@ -15,7 +15,7 @@ public extension String {
     }
     
     //Validation of url
-    func validateUrl() -> Bool {
+    public func validateUrl() -> Bool {
         if let url  = NSURL(string: self) {
             return UIApplication.shared.canOpenURL(url as URL)
         }

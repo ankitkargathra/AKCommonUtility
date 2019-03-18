@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		0742ED58626FC24C458BF37B4AA1ED82 /* Pods-AKCommonUtility_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0312DC3D798CE442A2941382912CC9E2 /* Pods-AKCommonUtility_Example-dummy.m */; };
 		1864BE940EA3FFA82ED1833F0692CD17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1C58C675223FD91D00924682 /* AKTimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C58C672223FD91D00924682 /* AKTimeAgo.swift */; };
+		1C58C676223FD91D00924682 /* AKStringOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C58C674223FD91D00924682 /* AKStringOperation.swift */; };
 		744D14D3CEA20778ABA5912179EF90B5 /* AKCommonUtility-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CFC500C6F97F2947C20BBE5222B0A3F /* AKCommonUtility-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97CEEEFF2132043C7E74A1889D118F72 /* AKCommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E244129BB14F70291C5FD401677A38 /* AKCommonUtility.swift */; };
 		9F8184F4BF713E16FC778AD423A0373A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		BD5CBB6C196ADF15A73F8BA29762F8D1 /* AKCommonUtility-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0FD3B28497A9E940C7E3292299427D /* AKCommonUtility-dummy.m */; };
 		C077A2790A2112E05E79B92FBCD1160C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -39,9 +40,10 @@
 /* Begin PBXFileReference section */
 		0312DC3D798CE442A2941382912CC9E2 /* Pods-AKCommonUtility_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AKCommonUtility_Example-dummy.m"; sourceTree = "<group>"; };
 		158F0FD50320B78FE32265F2D9023BB3 /* Pods-AKCommonUtility_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AKCommonUtility_Tests-dummy.m"; sourceTree = "<group>"; };
+		1C58C672223FD91D00924682 /* AKTimeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKTimeAgo.swift; sourceTree = "<group>"; };
+		1C58C674223FD91D00924682 /* AKStringOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKStringOperation.swift; sourceTree = "<group>"; };
 		2187F452974E03DF82197BD2A9461485 /* AKCommonUtility.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AKCommonUtility.xcconfig; sourceTree = "<group>"; };
 		21AFF48C2CF6B4832F9DE029C639C733 /* Pods-AKCommonUtility_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKCommonUtility_Example-Info.plist"; sourceTree = "<group>"; };
-		21E244129BB14F70291C5FD401677A38 /* AKCommonUtility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AKCommonUtility.swift; path = AKCommonUtility/Classes/AKCommonUtility.swift; sourceTree = "<group>"; };
 		23CC54900E7C32BAF04114B95E1F627B /* Pods-AKCommonUtility_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AKCommonUtility_Tests.modulemap"; sourceTree = "<group>"; };
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		29412835765877F2FE1001DBCF0CD50A /* Pods-AKCommonUtility_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AKCommonUtility_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -111,12 +113,31 @@
 		15CBC47F688E16C367F5479528E087F3 /* AKCommonUtility */ = {
 			isa = PBXGroup;
 			children = (
-				21E244129BB14F70291C5FD401677A38 /* AKCommonUtility.swift */,
+				1C58C673223FD91D00924682 /* AKStringOperation */,
+				1C58C671223FD91D00924682 /* AKTimeAgo */,
 				709F9D1E1C53A1A9CB1B5C44B9382E3D /* Pod */,
 				6A2D0C881CCA1A700B071022E984D69B /* Support Files */,
 			);
 			name = AKCommonUtility;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		1C58C671223FD91D00924682 /* AKTimeAgo */ = {
+			isa = PBXGroup;
+			children = (
+				1C58C672223FD91D00924682 /* AKTimeAgo.swift */,
+			);
+			name = AKTimeAgo;
+			path = AKCommonUtility/Classes/AKTimeAgo;
+			sourceTree = "<group>";
+		};
+		1C58C673223FD91D00924682 /* AKStringOperation */ = {
+			isa = PBXGroup;
+			children = (
+				1C58C674223FD91D00924682 /* AKStringOperation.swift */,
+			);
+			name = AKStringOperation;
+			path = AKCommonUtility/Classes/AKStringOperation;
 			sourceTree = "<group>";
 		};
 		29B088BDACC115A00B32060D0875144D /* Pods-AKCommonUtility_Example */ = {
@@ -372,8 +393,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C58C675223FD91D00924682 /* AKTimeAgo.swift in Sources */,
+				1C58C676223FD91D00924682 /* AKStringOperation.swift in Sources */,
 				BD5CBB6C196ADF15A73F8BA29762F8D1 /* AKCommonUtility-dummy.m in Sources */,
-				97CEEEFF2132043C7E74A1889D118F72 /* AKCommonUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
